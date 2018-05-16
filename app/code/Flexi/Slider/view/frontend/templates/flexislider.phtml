@@ -1,0 +1,36 @@
+
+<div id="container" class="cf">
+	<div id="main" role="main">
+	  <section class="slider">
+			<div class="flexslider">
+			  <ul class="slides">
+				<li>
+				<img src="<?php echo $block->getViewFileUrl('Flexi_Slider::images/kitchen_adventurer_cheesecake_brownie.jpg'); ?>" alt=""/>
+				</li>
+				<li>
+				<img src="<?php echo $block->getViewFileUrl('Flexi_Slider::images/kitchen_adventurer_lemon.jpg'); ?>" alt=""/>
+				</li>
+				<li>
+				<img src="<?php echo $block->getViewFileUrl('Flexi_Slider::images/kitchen_adventurer_donut.jpg'); ?>" alt=""/>
+				</li>
+				<li>
+				<img src="<?php echo $block->getViewFileUrl('Flexi_Slider::images/kitchen_adventurer_caramel.jpg'); ?>" alt=""/>
+				</li>
+			  </ul>
+			</div>
+	  </section>
+	</div>
+</div>
+
+<script>
+    require([
+        'jquery',
+        'flexslider'
+    ], function($){
+		$(window).load(function(){
+		  $('.flexslider').flexslider({
+			animation: "slide"
+		  });
+       });
+	})
+</script>
